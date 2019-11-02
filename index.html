@@ -2,78 +2,40 @@
 <html>
 <head>
     <title>Word Guessing Game</title>
-    <link ref="stylesheet" href="css/reset.css">
-    <link ref="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>Step Right Up and Guess that Famous Micheal!!</header>
-<script>
+    <div id="wrapper">
+        <h1 class="chrome">Step right up and Guess That MICHEAL!!</h1>
 
-    //Game Elements//
-    
-    var wordlist = ["Douglas", "Keaton", "Caine", "Jackson", "Crombopulos", 
-                 "Vick", "Jordan", "B Jordan", "J Fox", "Stipe", "Bolton", "Shure",
-                "Shannon", "Richards", "Bay", "Imperioli", "Landon"];
+        </div>
 
-    var targetWord = wordlist[Math.floor(Math.random() * wordlist.length)];
+        <div id="container">
+            <h2 id ="micheal"></h2>
 
-    var answerArray = [];
-        for (var i = 0; i < targetWord.length; i++) {
-            answerArray = [i] = "_";
-    }
-
-    
-
-    var remainingLetters = targetWord.length;
-
-    //Actual Mechanics//
-    
-    // Use key events to listen for the letters that your players will type.
-
-    document.onkeyup = function(event)  {
-        var guess = event.key.toLowerCase();
-
-        if guess === answerArray {
-            text.guess [i]
-        }
-
-        document.getElementById(i).addEventListener()
-
-
-4. Display the following on the page:
-
-<p>Press any key to get started!</p>
-
-
-6. Wins: (# of times user guessed the word correctly).
-
-//    * If the word is `madonna`, display it like this when the game starts: `_ _ _ _ _ _ _`.
-
-//    * As the user guesses the correct letters, reveal them: `m a d o _  _ a`.
-   if (targetWord.indexOf(guess) === -1) {
-        alert("Good try but Wrong!");
-      }
-           else {
-        alert("That's right!");
-
-// 7. Number of Guesses Remaining: (# of guesses remaining for the user).
-
-// 8. Letters Already Guessed: (Letters the user has guessed, displayed like `L Z Y H`).
-
-// 9. After the user wins/loses the game should automatically choose another word and make the user play it.
-
-
-
-       
-    }
-
-    
-
-
-
-
-
-</script>
-</body>
+            <div id="band-div"><img src="assets/images/hangman-boardgame.jpg" alt="Famous Micheals"></div>
+            <div id="game-section">
+                <p>Press any key to start!</p>
+                <div>
+                    <h3 class="section-title">Wins</h3>
+                    <div id="wins"></div>
+                </div>
+                <div id="current-word-section">
+                    <h3 class="section-title">Current Micheal</h3>
+                    <div id="current-word"></div>
+                </div>
+                <div id="guesses-remaining-section">
+                    <h3 class="section-title">Number of Guesses Remaining</h3>
+                    <div id="guesses-remaining"></div>
+                </div>
+                <div id ="guessed-letters-section">
+                    <h3 class="section-title">Letters Already Guessed</h3>
+                    <div id="guessed-letters"></div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+ </body>
 </html>
   
