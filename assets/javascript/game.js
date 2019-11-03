@@ -14,7 +14,8 @@ var wordGuessGame = {
     bay: { picture: "mikebay.jpg" },
     imperioli: { picture: "mikeimp.jpg" },
     landon: { picture: "mikelandon.jpg" },
-    cera: {picture: "mikecera.jpg"}
+    cera: {picture: "mikecera.jpg" },
+    che: {picture:"mikeche.jpg" }
   },
 
   targetWord: null,
@@ -148,8 +149,8 @@ var wordGuessGame = {
 
 
 
-      document.querySelector("#band-div").innerHTML =
-        "<img class='band-image' src='assets/images/" +
+      document.querySelector("#mike-div").innerHTML =
+        "<img id='mike-image' src='assets/images/" +
         this.wordsToPick[this.targetWord].picture + "' alt='" +
         this.wordsToPick[this.targetWord].song + "'>";
 
