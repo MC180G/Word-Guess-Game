@@ -28,6 +28,9 @@ var wordGuessGame = {
   wins: 0,
 
   setupGame: function () {
+
+    // eliminate picture from previous round
+    
     // Choose a Micheal
     var objKeys = Object.keys(this.wordsToPick);
     this.targetWord = objKeys[Math.floor(Math.random() * objKeys.length)];
