@@ -16,8 +16,11 @@ h3 {
 }
 
 #wins {
-    background-color: yellowgreen;
+    color: yellowgreen;
+    font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
     width: auto;
+    text-align: center;
 }
 
 #current-word-section {
@@ -49,7 +52,19 @@ h3 {
     width: auto;
 }
 
-.guessed-letters-section {
-    background-color: grey;
+#guesses-remaining {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#guessed-letters-section {
+    background-color: greenyellow;
     width: auto;
+}
+
+#guessed-letters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
