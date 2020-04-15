@@ -1,3 +1,15 @@
+h1,
+h3 {
+    text-align: center;
+}
+
+#container {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #mike-image {
     height: 250px;
     width: 250px;
@@ -9,36 +21,35 @@
 }
 
 #current-word-section {
-    background-color: steelblue;
+    background-color: sandybrown;
     text-emphasis: bold;
-    width: 30%;
+    width: auto;
+}
+
+#current-word {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .section-title {
     font-family: 'Permanent Marker', cursive;
-    align-items: center;
-    width: 30%;
-
+    width: auto;
 }
 
 .card {
-    width:100%;
-    height:100px;
+    width: 100%;
+    height: 100px;
     align-items: center;
-    width: 30%;
-
+    width: auto;
 }
 
 #guesses-remaining-section {
     background-color: thistle;
-    width: 30%;
-
+    width: auto;
 }
 
 .guessed-letters-section {
     background-color: grey;
-    width: 30%;
-
-
+    width: auto;
 }
-
